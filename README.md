@@ -7,7 +7,8 @@ Initially only the bootstrapping procedure for the impulse response functions is
 
 The speed improvements are quite considerable and the results should be the same. It is important to note that in case of a lot of cores the RAM becomes the bottleneck. So please be advised that there might occur swapping, slowing the parallel processing down considerably.
 Short comparison using the Cigar PanelVAR
-  microbenchmark(
+  
+    microbenchmark(
               a = (my.bootstrap_irf(model = model, typeof_irf = "GIRF", n.ahead = 8, nof_Nstar_draws = 20, confidence.band = 0.95))
             , b = (bootstrap_irf(model = model, typeof_irf = "GIRF", n.ahead = 8, nof_Nstar_draws = 20, confidence.band = 0.95))
             , times = 10
