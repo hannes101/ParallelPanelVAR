@@ -17,6 +17,7 @@ my.bootstrap_irf <- function (model, typeof_irf = c("OIRF", "GIRF"), n.ahead, no
         # for loops to select the resampled data and calculate the panelvar and irf
        pvar_irf <- foreach(i0 = 1:nof_Nstar_draws) %dopar% {
                 library(panelvar)
+				library(data.table)
                 dt.data_resampled <- dt.Data_initial[category == Nstar_draws[[i0]][1],]
                 dt.data_resampled[, category := as.factor(1)]
                 
