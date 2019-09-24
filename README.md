@@ -21,4 +21,7 @@ Short comparison using the Cigar PanelVAR
 
 I've only tested it on Windows, but this should also work on Linux.
 
+Sigmund, Michael, and Robert Ferstl. "Panel vector autoregression in R with the package panelvar." The Quarterly Review of Economics and Finance (2019).
+
+Earlier Working Paper:
 Panel Vector Autoregression in R with the Package Panelvar by Michael Sigmund and Robert Ferstl https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2896087
